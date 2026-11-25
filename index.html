@@ -1,16 +1,16 @@
 <!doctype html>
-<html lang="es" data-theme="dark">
+<html lang="es" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#161922">
+<meta name="theme-color" content="#F2F5F9">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="description" content="NexoLab: tu centro de mando personal para trabajo, proyectos y estudios.">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-192.png">
-<title>NexoLab · Tu centro de mando</title>
+<title>NexoLab · Work & Project OS</title>
 <style>
 :root{
   color-scheme:dark;
@@ -76,6 +76,51 @@ a{color:var(--info)}
 }
 @media(max-width:390px){.stats-grid{grid-template-columns:repeat(2,1fr)}.stat-top{font-size:10px}.stat-value{font-size:24px}.top-search{max-width:150px}.brand-name{font-size:16px}}
 @media(min-width:761px){.mobile-bottom,.mobile-fab{display:none!important}}
+
+/* =========================================================
+   NEXOLAB · VISUAL SYSTEM 2.0
+   Dirección: profesional / editorial / productividad.
+   Paleta slate + cobalt + teal; geometría más precisa.
+   ========================================================= */
+html[data-theme="light"]{
+  color-scheme:light;
+  --bg:#F2F5F9;--bg2:#FFFFFF;--card:#FFFFFF;--card2:#F5F7FA;--line:#DDE4ED;
+  --txt:#17263A;--mut:#65758B;--acc:#285AC7;--acc2:#0F8588;--ok:#167B5C;
+  --info:#2F6FD1;--warn:#A96D16;--bad:#C44252;--vio:#6558A6;--teal:#0F8588;
+  --shadow:0 3px 14px rgba(27,48,75,.055);--r:13px;--navw:258px;
+}
+html[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#101B2A;--bg2:#162438;--card:#192A40;--card2:#20344D;--line:#30445D;
+  --txt:#EAF0F6;--mut:#A5B4C7;--acc:#83A9FF;--acc2:#64C3C4;--ok:#69C6A5;
+  --info:#8AB5FF;--warn:#E4BB70;--bad:#F08B98;--vio:#B2A7F5;--teal:#66C3C5;
+  --shadow:0 8px 26px rgba(0,0,0,.17);--r:13px;--navw:258px;
+}
+html,body{font-family:Inter,"Aptos","Segoe UI",system-ui,-apple-system,Roboto,sans-serif;font-size:14px;letter-spacing:0;line-height:1.5}
+body{background:var(--bg);background-image:none}
+.sidebar{background:#14253B;border-right:1px solid #263B54;backdrop-filter:none;box-shadow:8px 0 26px rgba(18,37,59,.08);padding:25px 15px 18px;gap:25px}
+.brand{padding:0 11px;gap:12px}.brand-mark{width:40px;height:40px;border-radius:10px;background:#2B61CF;color:#fff;font-size:20px;font-weight:850;box-shadow:none;letter-spacing:-1px}
+.brand-name{font-size:16px;letter-spacing:1.7px;font-weight:850;color:#F3F6FB}.brand-sub{font-size:9px;letter-spacing:1.35px;color:#A7B6C8}
+.nav-label{color:#8295AC;font-size:9px;letter-spacing:1.6px;font-weight:800;padding:0 13px;margin-bottom:8px}
+.nav-list{gap:3px}.nav-btn{min-height:42px;border-radius:8px;padding:10px 12px;color:#B5C1D0;font-weight:600;font-size:12px;gap:11px;transition:background .14s,color .14s}
+.nav-btn:hover{background:#203852;color:#F7FAFF}.nav-btn.active{background:#24466B;color:#fff;box-shadow:inset 3px 0 #73A1FF}
+.nav-ico{font-size:15px;color:#91A8C1}.nav-btn.active .nav-ico{color:#AFC9FF}.nav-count{background:#304A68;color:#D6E2F1;border-radius:6px;font-size:10px}
+.storage-pill{background:#1B3049;border-color:#324B66;color:#B9C7D7;border-radius:8px;padding:10px 11px}.storage-dot{box-shadow:none;width:7px;height:7px}.sidebar-foot{color:#8295AC}
+.main{background:var(--bg)}.topbar{height:70px;padding:0 clamp(18px,3vw,40px);background:color-mix(in srgb,var(--bg2) 92%,transparent);border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}
+.top-search input{border-radius:8px;background:var(--card2);border-color:transparent;height:39px;font-size:12px}.top-search input:focus{border-color:var(--info);background:var(--card)}
+.icon-btn{border-radius:8px;background:var(--card);border-color:var(--line);width:38px;height:38px}.btn{border-radius:8px;font-size:12px;font-weight:680;padding:9px 13px}.btn.primary{background:var(--acc);color:#fff;box-shadow:none}.btn.primary:hover{background:#1F4EAF;filter:none}.btn.small{border-radius:7px}
+.content{padding-top:30px}.eyebrow{font-size:9px;letter-spacing:1.9px;color:var(--acc);font-weight:800}.page-title{font-size:clamp(26px,3vw,35px);font-weight:760;letter-spacing:-1.1px;color:var(--txt)}.page-sub{font-size:12px;line-height:1.55;color:var(--mut)}
+.stats-grid{gap:12px}.stat-card{border-radius:10px;padding:16px 17px;min-height:105px;box-shadow:none;border-color:var(--line)}.stat-card:after{width:70px;height:70px;right:-22px;top:-25px;opacity:.07}.stat-top{font-size:10px;letter-spacing:.2px}.stat-value{font-size:29px;font-weight:760;letter-spacing:-.8px}.stat-foot{font-size:10px}
+.section-card{border-radius:11px;padding:18px;box-shadow:var(--shadow)}.section-title{font-size:14px;font-weight:760}.section-note{font-size:10px}.item-card{border-radius:9px;padding:11px 12px}.item-title{font-size:12px;font-weight:700}.item-meta{font-size:10px}.project-card{border-radius:11px;padding:17px;box-shadow:none}.project-card:hover{transform:translateY(-1px);border-color:var(--acc)}.project-icon{border-radius:9px}.project-name{font-size:14px;font-weight:760}.project-desc{font-size:10px}.progress{height:5px;border-radius:4px}.quick-card{border-radius:9px;padding:12px}.quick-ico{border-radius:8px}.quick-name{font-size:11px;font-weight:700}
+.pill{border-radius:5px;font-size:9px;letter-spacing:.15px;padding:3px 6px;font-weight:750}.check-circle{border-radius:5px}.tiny-btn{border-radius:7px}.control{border-radius:8px}.segmented{border-radius:8px}.segmented button{border-radius:6px}.kanban-col{border-radius:10px}.kanban-task{background:var(--card)}
+.calendar-card{border-radius:11px}.cal-day{border-radius:7px}.cal-day.today{border-color:var(--acc)}.cal-day.selected{background:color-mix(in srgb,var(--acc) 10%,var(--card));border-color:var(--acc)}
+.followup-card{border-radius:10px}.age-num{font-size:18px;font-weight:760}.note-card{border-radius:10px}.area-chip{border-radius:7px}.ring{width:106px;height:106px}.modal{border-radius:14px}.modal-head{padding:17px 19px}.modal-title{font-weight:760}.field input,.field select,.field textarea{border-radius:8px}.toast{border-radius:8px}
+.mobile-bottom{background:color-mix(in srgb,var(--bg2) 96%,transparent);border-top-color:var(--line)}.mobile-nav{font-weight:650;font-size:9px}.mobile-nav.active{color:var(--acc)}.mobile-fab{background:var(--acc);color:#fff;border-radius:13px;box-shadow:0 7px 18px color-mix(in srgb,var(--acc) 24%,transparent)}
+@media(max-width:760px){
+  .topbar{height:60px}.mobile-brand{font-weight:800;letter-spacing:1.1px;font-size:12px}.mobile-brand .brand-mark{border-radius:8px;width:30px;height:30px;font-size:15px}
+  .content{padding-top:22px}.page-title{font-size:26px}.stat-card{border-radius:9px}.section-card{border-radius:10px;padding:13px}.modal{border-radius:15px 15px 0 0}
+}
+
 </style>
 </head>
 <body>
@@ -129,7 +174,8 @@ a{color:var(--info)}
 <script>
 'use strict';
 /* NexoLab · aplicación personal de organización. Datos locales primero, sincronización opcional con Drive. */
-const APP_VERSION = 1;
+const APP_VERSION = 2;
+const BUILD_VERSION = '2026.11.25.2';
 const DB_NAME = 'nexolab-db', DB_STORE = 'app';
 const $ = (s,root=document) => root.querySelector(s);
 const $$ = (s,root=document) => [...root.querySelectorAll(s)];
@@ -148,12 +194,12 @@ const daysBetween = (a,b=todayISO()) => { const x=dateObj(a),y=dateObj(b); retur
 const priorityLabel = p => ({high:'Alta',medium:'Media',low:'Baja'}[p]||'Media');
 const priorityClass = p => ({high:'high',medium:'medium',low:'low'}[p]||'medium');
 const projectDefaults = [
- {id:'work',name:'GE Healthcare',short:'Trabajo',icon:'✧',color:'#ff927c',desc:'Actividad profesional y servicio de campo',areas:['Intervenciones','Instalaciones','Averías','Mantenimientos','Pedidos y piezas','Clientes y hospitales','Documentación','Formación','Administración']},
- {id:'raditest',name:'Raditest',short:'Raditest',icon:'◈',color:'#b6a4ff',desc:'Coordinación y seguimiento del proyecto',areas:['TAC','Mamografía','Arcos','Salas RX']},
- {id:'master',name:'Máster IA',short:'Máster',icon:'⌘',color:'#8ab8ff',desc:'Asignaturas, prácticas y entregas',areas:['Asignaturas','Clases','Prácticas','Exámenes','Proyecto / TFM','Material de estudio']}
+ {id:'work',name:'GE Healthcare',short:'Trabajo',icon:'▰',color:'#2457A6',desc:'Actividad profesional y servicio de campo',areas:['Intervenciones','Instalaciones','Averías','Mantenimientos','Pedidos y piezas','Clientes y hospitales','Documentación','Formación','Administración']},
+ {id:'raditest',name:'Raditest',short:'Raditest',icon:'◫',color:'#0D8587',desc:'Coordinación y seguimiento del proyecto',areas:['TAC','Mamografía','Arcos','Salas RX']},
+ {id:'master',name:'Máster IA',short:'Máster',icon:'∑',color:'#6558A6',desc:'Asignaturas, prácticas y entregas',areas:['Asignaturas','Clases','Prácticas','Exámenes','Proyecto / TFM','Material de estudio']}
 ];
 const initialState = () => ({
- version:APP_VERSION,createdAt:nowISO(),updatedAt:nowISO(),settings:{theme:'dark',weekStart:1,defaultReminder:30,driveClientId:'',driveAuto:false,lastDriveSync:null,notifyEnabled:false,name:'',showCompleted:false},
+ version:APP_VERSION,createdAt:nowISO(),updatedAt:nowISO(),settings:{theme:'light',weekStart:1,defaultReminder:30,driveClientId:'',driveAuto:false,lastDriveSync:null,notifyEnabled:false,name:'',showCompleted:false},
  projects:projectDefaults.map(p=>({...p,updatedAt:nowISO()})),tasks:[],followups:[],events:[],notes:[],
  meta:{deviceId:uid(),lastBackup:null}
 });
@@ -162,7 +208,7 @@ let dbPromise;
 let driveFolderId=null;
 function openDB(){if(!('indexedDB'in window))return Promise.resolve(null);if(dbPromise)return dbPromise;dbPromise=new Promise((resolve,reject)=>{const req=indexedDB.open(DB_NAME,1);req.onupgradeneeded=()=>{const db=req.result;if(!db.objectStoreNames.contains(DB_STORE))db.createObjectStore(DB_STORE,{keyPath:'id'});};req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error);});return dbPromise;}
 async function loadState(){try{const db=await openDB();if(db){const val=await new Promise((res,rej)=>{const tx=db.transaction(DB_STORE,'readonly');const q=tx.objectStore(DB_STORE).get('state');q.onsuccess=()=>res(q.result?.value||null);q.onerror=()=>rej(q.error);});if(val){S=normalizeState(val);return;}}}catch(e){console.warn('IndexedDB no disponible',e);}try{const raw=localStorage.getItem('nexolab-state');if(raw)S=normalizeState(JSON.parse(raw));}catch(e){console.warn(e);}}
-function normalizeState(v){const d=initialState();const out={...d,...v,settings:{...d.settings,...(v.settings||{})},meta:{...d.meta,...(v.meta||{})}};for(const k of ['projects','tasks','followups','events','notes'])if(!Array.isArray(out[k]))out[k]=d[k];if(!out.projects.length)out.projects=d.projects;return out;}
+function normalizeState(v){const d=initialState();const out={...d,...v,settings:{...d.settings,...(v.settings||{})},meta:{...d.meta,...(v.meta||{})}};for(const k of ['projects','tasks','followups','events','notes'])if(!Array.isArray(out[k]))out[k]=d[k];if(!out.projects.length)out.projects=d.projects;const palette={work:{old:'#ff927c',next:'#2457A6'},raditest:{old:'#b6a4ff',next:'#0D8587'},master:{old:'#8ab8ff',next:'#6558A6'}};out.projects=out.projects.map(p=>{const m=palette[p.id];return m&&p.color===m.old?{...p,color:m.next}:p;});return out;}
 async function persist(sync=true){S.updatedAt=nowISO();clearTimeout(saveTimer);saveTimer=setTimeout(async()=>{try{const db=await openDB();if(db)await new Promise((res,rej)=>{const tx=db.transaction(DB_STORE,'readwrite');tx.objectStore(DB_STORE).put({id:'state',value:S});tx.oncomplete=res;tx.onerror=()=>rej(tx.error);});else localStorage.setItem('nexolab-state',JSON.stringify(S));}catch(e){console.error(e);toast('No se pudo guardar localmente. Exporta una copia de seguridad.','error');}updateStorageStatus();if(sync)scheduleDriveSync();},180);}
 function updateStorageStatus(){const el=$('#storageLabel');if(el)el.textContent=S.settings.driveAuto?(driveToken&&Date.now()<driveTokenExp?'Drive · sincronización activa':'Drive · renovar acceso'):'Guardado en este dispositivo';}
 function live(arr){return (S[arr]||[]).filter(x=>!x.deletedAt);}
@@ -182,7 +228,7 @@ function taskCounts(){const all=visibleTasks();return {open:all.filter(t=>t.stat
 function projectCount(id){const tasks=visibleTasks().filter(t=>t.projectId===id&&t.status!=='done');const total=visibleTasks().filter(t=>t.projectId===id).length;return {open:tasks.length,total,done:total-tasks.length,follow:visibleFollowups().filter(f=>f.projectId===id).length};}
 function toast(msg,type=''){const el=document.createElement('div');el.className='toast '+type;el.textContent=msg;$('#toastArea').append(el);setTimeout(()=>el.remove(),3500);}
 function setView(v){if(v!=='projectDetail'){currentProjectId='work';currentArea='';}currentView=v;render();$$('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===v));$('#searchResults').classList.remove('open');$('#globalSearch').value='';window.scrollTo({top:0,behavior:'smooth'});}
-function setTheme(theme){S.settings.theme=theme;document.documentElement.dataset.theme=theme;const meta=$('meta[name="theme-color"]');if(meta)meta.content=theme==='dark'?'#161922':'#f5f3f8';$('#themeBtn').textContent=theme==='dark'?'☼':'☾';persist(false);}
+function setTheme(theme){S.settings.theme=theme;document.documentElement.dataset.theme=theme;const meta=$('meta[name="theme-color"]');if(meta)meta.content=theme==='dark'?'#101B2A':'#F2F5F9';$('#themeBtn').textContent=theme==='dark'?'☼':'☾';persist(false);}
 function navCounts(){$('#navTaskCount').textContent=taskCounts().open;$('#navFollowCount').textContent=visibleFollowups().length;}
 function render(){navCounts();updateStorageStatus();const root=$('#viewRoot');const views={dashboard:renderDashboard,calendar:renderCalendar,tasks:renderTasks,waiting:renderWaiting,notes:renderNotes,projects:renderProjects,analytics:renderAnalytics,settings:renderSettings,more:renderMore};root.innerHTML=(views[currentView]||renderDashboard)();bindSettings();$$('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===currentView));}
 function pageHead(eyebrow,title,sub,actions=''){return `<div class="page-head"><div><div class="eyebrow">${eyebrow}</div><h1 class="page-title">${title}</h1><div class="page-sub">${sub}</div></div><div class="head-actions">${actions}</div></div>`;}
@@ -260,7 +306,7 @@ let currentProjectId='work', currentArea='';
 function projectOptions(selected){return S.projects.filter(p=>!p.deletedAt).map(p=>`<option value="${p.id}" ${selected===p.id?'selected':''}>${esc(p.name)}</option>`).join('');}
 function areaOptions(projectId,selected){const p=proj(projectId);return (p.areas||[]).map(a=>`<option value="${esc(a)}" ${selected===a?'selected':''}>${esc(a)}</option>`).join('');}
 function modalOpen(title,sub,body){$('#modal').innerHTML=`<div class="modal-head"><div><div class="modal-title">${title}</div><div class="modal-sub">${sub||''}</div></div><button class="icon-btn" data-modal-close aria-label="Cerrar">×</button></div><div class="modal-body">${body}</div>`;$('#modalBackdrop').classList.add('open');setTimeout(()=>{$('#modal input:not([type=hidden]),#modal textarea,#modal select')?.focus({preventScroll:true});},80);}
-function modalClose(){$('#modalBackdrop').classList.remove('open');$('#modal').innerHTML='';}
+function modalClose(){$('#modalBackdrop').classList.remove('open');$('#modal').innerHTML='';setTimeout(applyPendingServiceWorkerUpdate,80);}
 function field(label,control,full=false,hint=''){return `<div class="field ${full?'full':''}"><label>${label}</label>${control}${hint?`<span class="hint">${hint}</span>`:''}</div>`;}
 function textInput(name,value='',placeholder='',type='text',required=false){return `<input name="${name}" type="${type}" value="${esc(value)}" placeholder="${esc(placeholder)}" ${required?'required':''}>`;}
 function textarea(name,value='',placeholder='',rows=3){return `<textarea name="${name}" rows="${rows}" placeholder="${esc(placeholder)}">${esc(value)}</textarea>`;}
@@ -304,7 +350,7 @@ async function importData(file){try{const payload=JSON.parse(await file.text());
 function mergeRecords(a,b){const map=new Map();[...(a||[]),...(b||[])].forEach(r=>{const old=map.get(r.id);if(!old||byUpdated(r,old)>=0)map.set(r.id,r);});return [...map.values()];}
 function mergeStates(local,remote){const out=normalizeState(local);for(const k of ['tasks','followups','events','notes','projects'])out[k]=mergeRecords(local[k],remote[k]);out.settings={...remote.settings,...local.settings};out.meta={...remote.meta,...local.meta};out.updatedAt=nowISO();return out;}
 async function forcePersist(){clearTimeout(saveTimer);try{const db=await openDB();if(db)await new Promise((res,rej)=>{const tx=db.transaction(DB_STORE,'readwrite');tx.objectStore(DB_STORE).put({id:'state',value:S});tx.oncomplete=res;tx.onerror=()=>rej(tx.error);});else localStorage.setItem('nexolab-state',JSON.stringify(S));updateStorageStatus();}catch(e){console.error(e);}}
-function updateThemeFromSettings(){document.documentElement.dataset.theme=S.settings.theme||'dark';const meta=$('meta[name="theme-color"]');if(meta)meta.content=S.settings.theme==='dark'?'#161922':'#f5f3f8';$('#themeBtn').textContent=S.settings.theme==='dark'?'☼':'☾';}
+function updateThemeFromSettings(){document.documentElement.dataset.theme=S.settings.theme||'dark';const meta=$('meta[name="theme-color"]');if(meta)meta.content=S.settings.theme==='dark'?'#101B2A':'#F2F5F9';$('#themeBtn').textContent=S.settings.theme==='dark'?'☼':'☾';}
 function notifyPermission(){return ('Notification' in window)?Notification.permission:'unsupported';}
 async function enableNotifications(){if(!('Notification'in window)){toast('Este navegador no admite notificaciones.','error');return;}try{const p=await Notification.requestPermission();if(p==='granted'){S.settings.notifyEnabled=true;persist(false);toast('Notificaciones activadas en este dispositivo.','good');scanReminders(true);}else toast('No se concedió permiso para notificaciones.','error');render();}catch(e){toast('No se pudo activar el permiso.','error');}}
 async function sendNotice(title,body,tag){if(notifyPermission()!=='granted')return;try{if('serviceWorker'in navigator){const reg=await navigator.serviceWorker.ready;await reg.showNotification(title,{body,tag,icon:'icon.svg',badge:'icon.svg',data:{url:'./'}});}else new Notification(title,{body,tag});}catch(e){console.warn('Notification failed',e);}}
@@ -390,7 +436,64 @@ window.addEventListener('online',()=>{toast('Conexión recuperada.','good');if(S
 window.addEventListener('focus',()=>{scanReminders();if(S.settings.driveAuto&&driveToken)scheduleDriveSync();});
 window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();window.deferredInstallPrompt=e;});
 
-async function boot(){try{await loadState();updateThemeFromSettings();$('#topDate').textContent=new Intl.DateTimeFormat('es-ES',{weekday:'short',day:'numeric',month:'short'}).format(new Date());render();bindSettings();if('serviceWorker'in navigator&&location.protocol!=='file:'){navigator.serviceWorker.register('sw.js').catch(e=>console.warn('SW:',e));}if(S.settings.notifyEnabled)scanReminders();setInterval(()=>scanReminders(),60000);document.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();$('#globalSearch').focus();}if(e.key==='Escape')modalClose();});}catch(e){console.error(e);toast('No se pudo inicializar NexoLab.','error');}}
+
+/* PWA UPDATE FLOW
+   - Mantiene el mismo start_url y el mismo ámbito instalado en iPhone.
+   - Comprueba version.json al abrir, al volver al primer plano y cada 10 minutos.
+   - Comprueba además el service worker sin usar la caché HTTP.
+   - Aplica la actualización automáticamente cuando no hay un formulario en edición.
+   - Los datos siguen en la misma base IndexedDB (nexolab-db), sin borrarlos.
+*/
+let pendingServiceWorkerReload=false;
+let appReloadScheduled=false;
+async function applyPendingServiceWorkerUpdate(){
+ if(!pendingServiceWorkerReload||appReloadScheduled||document.visibilityState==='hidden')return;
+ const modalOpen=$('#modalBackdrop')?.classList.contains('open');
+ const active=document.activeElement;
+ const editing=active&&(/^(INPUT|TEXTAREA|SELECT)$/.test(active.tagName))&&active.id!=='globalSearch';
+ if(modalOpen||editing)return;
+ pendingServiceWorkerReload=false;
+ appReloadScheduled=true;
+ try{await forcePersist();}catch(error){console.warn('No se pudo forzar el guardado antes de actualizar:',error);}
+ location.reload();
+}
+function queueAppUpdate(message='Nueva versión disponible. Actualizando NexoLab…'){
+ pendingServiceWorkerReload=true;
+ if($('#modalBackdrop')?.classList.contains('open'))toast('Nueva versión descargada. Se aplicará al cerrar la edición.','good');
+ else toast(message,'good');
+ applyPendingServiceWorkerUpdate();
+}
+async function checkAppBuild(){
+ try{
+  const url=new URL('version.json',location.href);
+  url.searchParams.set('check',String(Date.now()));
+  const response=await fetch(url.toString(),{cache:'no-store',headers:{'Cache-Control':'no-cache'}});
+  if(!response.ok)return;
+  const remote=await response.json();
+  if(remote?.version&&remote.version!==BUILD_VERSION)queueAppUpdate();
+ }catch(error){console.debug('NexoLab version check skipped:',error);}
+}
+function setupServiceWorkerUpdates(){
+ if(!('serviceWorker'in navigator)||location.protocol==='file:')return;
+ const hadController=!!navigator.serviceWorker.controller;
+ navigator.serviceWorker.addEventListener('controllerchange',()=>{
+  if(hadController)queueAppUpdate();
+ });
+ const checkAll=()=>{
+  if(document.visibilityState!=='visible')return;
+  checkAppBuild();
+  if(window.nexoLabSWRegistration)window.nexoLabSWRegistration.update().catch(err=>console.debug('NexoLab SW update check:',err));
+ };
+ navigator.serviceWorker.register('sw.js',{scope:'./',updateViaCache:'none'}).then(reg=>{
+  window.nexoLabSWRegistration=reg;
+  checkAll();
+  document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'){checkAll();applyPendingServiceWorkerUpdate();}});
+  window.addEventListener('focus',checkAll);
+  window.setInterval(checkAll,10*60*1000);
+ }).catch(err=>console.warn('No se pudo registrar el service worker:',err));
+ document.addEventListener('focusout',()=>setTimeout(applyPendingServiceWorkerUpdate,100));
+}
+async function boot(){try{await loadState();updateThemeFromSettings();$('#topDate').textContent=new Intl.DateTimeFormat('es-ES',{weekday:'short',day:'numeric',month:'short'}).format(new Date());render();bindSettings();setupServiceWorkerUpdates();if(S.settings.notifyEnabled)scanReminders();setInterval(()=>scanReminders(),60000);document.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();$('#globalSearch').focus();}if(e.key==='Escape')modalClose();});}catch(e){console.error(e);toast('No se pudo inicializar NexoLab.','error');}}
 boot();
 </script>
 </body>

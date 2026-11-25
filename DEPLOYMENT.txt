@@ -1,13 +1,21 @@
-NEXOLAB · DESPLIEGUE RÁPIDO
+NEXOLAB · ACTUALIZAR LA INSTALACIÓN EXISTENTE
 
-1. Sube estos seis archivos a la raíz del repositorio GitHub: index.html, manifest.json, sw.js, icon.svg, icon-192.png e icon-512.png.
-2. GitHub → Settings → Pages → Deploy from a branch → main → /(root) → Save.
-3. Abre la URL HTTPS de GitHub Pages.
-4. iPhone: Safari → Compartir → Añadir a pantalla de inicio.
-5. Configura Google Drive desde Más → Preferencias y datos (ver README.md).
+REPOSITORIO EXISTENTE: https://github.com/mariajega/nexoLAB
+URL QUE DEBE PERMANECER: https://mariajega.github.io/nexoLAB/
 
-IMPORTANTE
-- No abras index.html desde file:// si quieres PWA, caché offline o Google OAuth.
-- La app funciona localmente sin Google Drive; conecta Drive para compartir el mismo conjunto de datos entre dispositivos.
-- Al iniciar una sesión nueva, renueva Google OAuth desde «Conectar / sincronizar».
-- Notificaciones cuando la app está cerrada requieren un backend Web Push adicional y no están activadas en esta entrega.
+No crees otro repositorio ni cambies el nombre o la ruta. No desinstales la PWA del iPhone.
+
+En la raíz del repositorio (rama main), reemplaza:
+- index.html
+- sw.js
+- manifest.json
+- version.json
+- icon.svg
+- icon-192.png
+- icon-512.png
+
+Haz commit y espera a que GitHub Pages publique. Abre la app desde el mismo icono del iPhone con conexión a internet. NexoLab comprobará la versión y aplicará la actualización automáticamente, sin tener que volver a añadirla a la pantalla de inicio.
+
+La identidad de la PWA conserva el mismo start_url (./), scope (./) e IndexedDB (nexolab-db). No borres los datos del sitio ni la base de datos del navegador.
+
+En las próximas publicaciones, cambia el valor "version" en version.json. Si modificas también recursos estáticos o el comportamiento del service worker, incrementa además CACHE_VERSION en sw.js.

@@ -1,0 +1,21 @@
+NEXOLAB · ACTUALIZACIÓN DE LA INSTALACIÓN EXISTENTE
+
+NO crees un repositorio nuevo. NO cambies la ruta /nexoLAB/ ni el enlace del iPhone.
+
+En el repositorio actual https://github.com/mariajega/nexoLAB (rama main, raíz):
+1. Reemplaza index.html.
+2. Reemplaza sw.js.
+3. Reemplaza manifest.json.
+4. Reemplaza version.json.
+5. Reemplaza icon.svg, icon-192.png e icon-512.png.
+6. Haz commit en main y espera a que GitHub Pages publique.
+
+Después:
+- Cierra y vuelve a abrir NexoLab desde el mismo icono del iPhone con conexión a internet.
+- La app comprueba las versiones al abrirse, al volver a primer plano y cada 10 minutos mientras esté abierta.
+- Una versión nueva se descarga y la app se recarga automáticamente cuando no haya un formulario en edición.
+- No borres los datos del navegador, no desinstales la PWA y no vuelvas a añadirla a pantalla de inicio.
+
+En futuras publicaciones, cambia el campo "version" de version.json para que las instalaciones abiertas detecten incluso cambios en el HTML que no requieran cambios en el service worker.
+
+Se conserva la URL instalada (start_url ./) y la base IndexedDB (nexolab-db), por lo que no se pierde la información local.

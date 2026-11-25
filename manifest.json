@@ -1,16 +1,27 @@
 {
-  "name": "NexoLab · Tu centro de mando",
+  "id": "./",
+  "name": "NexoLab · Work & Project OS",
   "short_name": "NexoLab",
-  "description": "Organización personal de trabajo, proyectos y estudios.",
+  "description": "Centro profesional de organización para trabajo, proyectos y estudios.",
   "lang": "es-ES",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "orientation": "portrait-primary",
-  "background_color": "#161922",
-  "theme_color": "#161922",
+  "orientation": "any",
+  "background_color": "#F2F5F9",
+  "theme_color": "#F2F5F9",
   "icons": [
-    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
-    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
   ]
 }

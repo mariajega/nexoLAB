@@ -1,4 +1,4 @@
-# NexoLab · Tu centro de mando personal
+# NexoLab · Work & Project OS
 
 NexoLab es una aplicación web progresiva (PWA) para organizar en un único lugar el trabajo, Raditest y el Máster de Inteligencia Artificial.
 
@@ -16,12 +16,24 @@ NexoLab es una aplicación web progresiva (PWA) para organizar en un único luga
 - **Sincronización opcional con Google Drive** dentro de una carpeta visible llamada `NexoLab`.
 - **PWA instalable** en iPhone y Windows.
 
+## Identidad visual
+
+La versión 2 introduce una estética profesional slate/navy con acentos cobalt y teal, tipografía de sistema más editorial, navegación azul marino, superficies claras y una geometría menos redondeada. Se conserva el tema oscuro con la misma paleta.
+
 ## Archivos
 
 - `index.html`: aplicación completa.
 - `manifest.json`: configuración instalable PWA.
 - `sw.js`: caché offline y recepción de clics en notificaciones.
 - `icon.svg`, `icon-192.png` e `icon-512.png`: iconos de NexoLab para navegador, Android y pantalla de inicio.
+
+## Actualizar una instalación ya existente (sin cambiar el enlace del iPhone)
+
+No crees un repositorio nuevo ni cambies la URL de GitHub Pages. Mantén el repositorio `nexoLAB`, su ruta `/nexoLAB/` y el mismo `start_url` del manifiesto. Para publicar una nueva versión, reemplaza en el repositorio los archivos `index.html`, `sw.js`, `manifest.json`, `version.json` e `icon.svg` por los de esta entrega. Conserva también `icon-192.png` y `icon-512.png` actuales. GitHub Pages publicará los cambios bajo la misma dirección.
+
+La aplicación comprueba actualizaciones al abrirse, al volver al primer plano y periódicamente mientras está abierta. El service worker instala la nueva versión, actualiza el HTML desde la red y recarga la app automáticamente cuando no hay un formulario en edición. Los datos se conservan porque se mantiene la misma base IndexedDB (`nexolab-db`). No elimines los datos del sitio ni desinstales el icono del iPhone.
+
+**Nota:** una PWA no se puede actualizar mientras está totalmente cerrada y sin ejecutarse. En el siguiente arranque con conexión, comprobará la nueva versión y la aplicará sin volver a añadirla a pantalla de inicio.
 
 ## Publicar gratis con GitHub Pages
 
