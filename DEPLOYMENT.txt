@@ -1,0 +1,13 @@
+NEXOLAB · DESPLIEGUE RÁPIDO
+
+1. Sube estos seis archivos a la raíz del repositorio GitHub: index.html, manifest.json, sw.js, icon.svg, icon-192.png e icon-512.png.
+2. GitHub → Settings → Pages → Deploy from a branch → main → /(root) → Save.
+3. Abre la URL HTTPS de GitHub Pages.
+4. iPhone: Safari → Compartir → Añadir a pantalla de inicio.
+5. Configura Google Drive desde Más → Preferencias y datos (ver README.md).
+
+IMPORTANTE
+- No abras index.html desde file:// si quieres PWA, caché offline o Google OAuth.
+- La app funciona localmente sin Google Drive; conecta Drive para compartir el mismo conjunto de datos entre dispositivos.
+- Al iniciar una sesión nueva, renueva Google OAuth desde «Conectar / sincronizar».
+- Notificaciones cuando la app está cerrada requieren un backend Web Push adicional y no están activadas en esta entrega.
