@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'nexolab-shell-';
-const CACHE_VERSION = 'v3-professional-20261125';
+const CACHE_VERSION = 'v4-botanical-20261125';
 const CACHE = CACHE_PREFIX + CACHE_VERSION;
 const SHELL = ['./', './index.html', './manifest.json', './version.json', './icon.svg', './icon-192.png', './icon-512.png'];
 
